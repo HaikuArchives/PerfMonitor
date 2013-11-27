@@ -1,0 +1,83 @@
+PerfMonitor v1.2
+written by Steve Sprang
+
+August 24, 1997
+
+Introduction
+============
+
+PerfMonitor (Performance Monitor) is an X-style CPU monitor. It shows the 
+load-history of each CPU as well as the RAM-utilization history for (approximately)
+the previous minute. It's updated roughly every 2/3 seconds.
+
+
+Usage
+=====
+
+To start using PerfMonitor simply launch the application. The program
+will then start displaying the CPU histories.
+
+Each CPU corresponds to a graph in the PerfMonitor window. CPU 0 is the
+topmost graph, CPU 1 the second from the top, and so on.
+
+Green lines indicate times when a CPU was "on" and red lines indicate
+times when a CPU was "off". CPUs can be toggled on and off by clicking
+in the corresponding graph. A disabled CPU will display a dimmed graph.
+
+NOTE: PerfMonitor will not allow you to shut off a CPU if it is currently
+the only active CPU. If you have need to shut down all processors (perhaps
+to benchmark your app on a no-processor machine) Be provides a similar
+program with this feature enabled called "Pulse".
+
+* All graphs in the PerfMonitor window can be hidden/exposed by clicking
+on the small blue toggle triangle immediately above the graph.
+
+* A new type of graph was introduced with version 1.1. This graph
+shows memory utilization. It is always the last graph in the window and
+utilization is indicated by blue lines. 
+
+* Version 1.2 now remembers the window position between launches
+and also records the toggled state of each graph so that you don't need
+to fiddle with it each time you launch it.
+
+
+The Code
+========
+
+The (commented) source for PerfMonitor is provided. A few fragments of
+code are based on sample code from Be (the aforementioned "Pulse").
+
+
+License and Distribution
+========================
+
+PerfMonitor is currently being distributed as freeware. However, 
+donations and/or job offers are welcome. ;)
+
+Feel free to distribute PerfMonitor in any way that you can. I only ask 
+that this package be left intact (i,e, the executable, source code,
+and this README should stay together).
+
+If you make any changes to the source code, please DO NOT distribute it
+without first contacting me.
+
+
+Contact Info
+============
+
+Please send all comments and/or bug reports to me:
+
+E-mail:	sprang@andrew.cmu.edu
+OR		ssprang@cs.cmu.edu
+		
+Permanent Address:
+		Steve Sprang
+		141 State Route 603
+		Shiloh, OH 44878
+		
+WWW: http://www.andrew.cmu.edu/user/sprang
+
+Other software I've written:
+	http://www.andrew.cmu.edu/user/sprang/software.html
+
+Enjoy!
